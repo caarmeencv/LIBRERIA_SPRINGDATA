@@ -7,5 +7,4 @@ import com.traballo.entity.Editorial;
 
 @Repository
 public interface EditorialRepository extends JpaRepository<Editorial, Long> {
-
 }

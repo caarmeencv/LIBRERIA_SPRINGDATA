@@ -7,5 +7,4 @@ import com.traballo.entity.Categoria;
 
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
-
 }

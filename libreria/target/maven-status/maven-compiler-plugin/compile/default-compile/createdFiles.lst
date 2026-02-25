@@ -4,10 +4,10 @@ com\traballo\entity\Autor.class
 com\traballo\service\LibroService.class
 com\traballo\repository\CategoriaRepository.class
 com\traballo\service\CategoriaService.class
+com\traballo\Libreria.class
 com\traballo\service\AutorService.class
 com\traballo\service\EditorialService.class
 com\traballo\repository\AutorRepository.class
-com\traballo\App.class
 com\traballo\repository\EditorialRepository.class
 com\traballo\entity\Libro.class
 com\traballo\repository\LibroRepository.class

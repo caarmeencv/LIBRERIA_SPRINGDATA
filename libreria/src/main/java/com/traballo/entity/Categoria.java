@@ -1,5 +1,6 @@
 package com.traballo.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
@@ -8,8 +9,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "categorias")
 public class Categoria {
 
     @Id
@@ -19,38 +22,30 @@ public class Categoria {
     private String nombre;
     private String descripcion;
 
+    // Si se borra la categoría -> se borran los libros
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Libro> libros;
+    private List<Libro> libros = new ArrayList<>();
 
-    public Categoria() {
-    }
+    public Categoria() {}
 
     public Categoria(String nombre, String descripcion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
 
-    // Getters y Setters
     public Long getId() { return id; }
 
     public String getNombre() { return nombre; }
-
     public void setNombre(String nombre) { this.nombre = nombre; }
 
     public String getDescripcion() { return descripcion; }
-
     public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
 
     public List<Libro> getLibros() { return libros; }
-
     public void setLibros(List<Libro> libros) { this.libros = libros; }
 
     @Override
     public String toString() {
-        return "Categoria{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                '}';
+        return "Categoria{id=" + id + ", nombre='" + nombre + "'}";
     }
 }

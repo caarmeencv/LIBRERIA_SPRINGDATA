@@ -1,6 +1,7 @@
 package com.traballo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -16,35 +17,49 @@ public class LibroService {
         this.libroRepository = libroRepository;
     }
 
+    // CRUD
     public Libro save(Libro libro) {
         return libroRepository.save(libro);
+    }
+
+    public Optional<Libro> findById(Long id) {
+        return libroRepository.findById(id);
     }
 
     public List<Libro> findAll() {
         return libroRepository.findAll();
     }
 
-    public List<Libro> buscarPorAno(int ano) {
+    public void deleteById(Long id) {
+        libroRepository.deleteById(id);
+    }
+
+    public long count() {
+        return libroRepository.count();
+    }
+
+    // ENUNCIADO
+    public List<Libro> buscarDesdeAno(Integer ano) {
         return libroRepository.findByAnoPublicacionGreaterThanEqual(ano);
     }
 
-    public Libro buscarPorISBN(String isbn) {
-        return libroRepository.findByISBN(isbn);
+    public Optional<Libro> buscarPorIsbn(String isbn) {
+        return libroRepository.findByIsbn(isbn);
     }
 
     public List<Libro> buscarPorEditorial(String nombre) {
-        return libroRepository.findByEditorialNombreIgnoreCaseContaining(nombre);
+        return libroRepository.findByEditorialNombreContainingIgnoreCase(nombre);
     }
 
     public List<Libro> buscarPorAutor(String nombre) {
-        return libroRepository.findByAutoresNombreIgnoreCaseContaining(nombre);
+        return libroRepository.findByAutoresNombreContainingIgnoreCase(nombre);
     }
 
-    public List<Libro> buscarPorCategoria(Long id) {
-        return libroRepository.findByCategoriaId(id);
+    public List<Libro> buscarPorCategoria(Long idCategoria) {
+        return libroRepository.findByCategoriaId(idCategoria);
     }
 
-    public List<Libro> buscarPorAutorId(Long id) {
-        return libroRepository.findByAutoresId(id);
+    public List<Libro> buscarPorAutorId(Long idAutor) {
+        return libroRepository.findByAutoresId(idAutor);
     }
 }
