@@ -35,7 +35,6 @@ public class Libro {
     @JoinColumn(name = "editorial_id")
     private Editorial editorial;
 
-    // Libro SIEMPRE carga autores
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "libro_autor",

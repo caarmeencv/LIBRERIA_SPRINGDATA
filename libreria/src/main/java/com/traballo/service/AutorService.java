@@ -18,7 +18,6 @@ public class AutorService {
         this.autorRepository = autorRepository;
     }
 
-    // CRUD
     public Autor save(Autor autor) {
         return autorRepository.save(autor);
     }
@@ -35,7 +34,6 @@ public class AutorService {
         autorRepository.deleteById(id);
     }
 
-    // ENUNCIADO
     public List<Autor> traerTodosConLibros() {
         return autorRepository.findAllWithLibros();
     }

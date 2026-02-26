@@ -17,7 +17,6 @@ public class LibroService {
         this.libroRepository = libroRepository;
     }
 
-    // CRUD
     public Libro save(Libro libro) {
         return libroRepository.save(libro);
     }
@@ -37,8 +36,7 @@ public class LibroService {
     public long count() {
         return libroRepository.count();
     }
-
-    // ENUNCIADO
+    
     public List<Libro> buscarDesdeAno(Integer ano) {
         return libroRepository.findByAnoPublicacionGreaterThanEqual(ano);
     }

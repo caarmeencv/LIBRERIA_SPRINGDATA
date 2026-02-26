@@ -22,7 +22,6 @@ public class Categoria {
     private String nombre;
     private String descripcion;
 
-    // Si se borra la categoría -> se borran los libros
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Libro> libros = new ArrayList<>();
 

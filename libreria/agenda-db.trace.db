@@ -1,49 +1,49 @@
-2026-02-25 10:04:50.785787+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.823459+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.800958+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.835606+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.802065+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.836902+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.804208+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.839089+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.805220+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.839089+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.808492+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.840123+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.810511+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.843633+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.812645+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.846044+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.813658+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.847445+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.814672+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.848471+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.818881+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.850781+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.822079+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.854271+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.824494+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.856515+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.826603+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.857874+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:50.829059+01:00 jdbc[3]: exception
+2026-02-26 12:07:22.860431+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
 The object is already closed [90007-224]
-2026-02-25 10:04:51.010201+01:00 jdbc[3]: exception
+2026-02-26 12:07:23.030055+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
@@ -81,7 +81,7 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
 	at java.base/java.lang.Thread.run(Thread.java:1447)
-2026-02-25 10:04:51.013352+01:00 jdbc[3]: exception
+2026-02-26 12:07:23.033407+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)

@@ -24,7 +24,6 @@ public class Autor {
     private String apellidos;
     private LocalDate fechaNacimiento;
 
-    // Autor NO carga libros por defecto
     @ManyToMany(mappedBy = "autores", fetch = FetchType.LAZY)
     private List<Libro> libros = new ArrayList<>();
 
